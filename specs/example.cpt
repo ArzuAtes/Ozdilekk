@@ -1,0 +1,34 @@
+Created by testinium on 28.02.2022
+
+This is a concept file with following syntax for each concept.
+
+# Alışverişe başla butonuna tıkla
+*id "com.ozdilek.ozdilekteyim:id/tv_startShoppingStore" 'ye tıklandı
+*"3" saniye bekle
+#Kategori ye tıklandı
+*id "com.ozdilek.ozdilekteyim:id/nav_categories" 'ye tıklandı
+*"3" saniye bekle
+#Kategoriden kadın'a tıkla
+* xpath "//*[@resource-id = 'com.ozdilek.ozdilekteyim:id/relLayCategoriesItem'] [2]" 'ye tıklandı
+*"3" saniye bekle
+#Kadın kategorisinden pantolona tıkla
+* xpath "  //*[@resource-id='com.ozdilek.ozdilekteyim:id/relLayCategoriesItem'] [14]" 'ye tıklandı
+*"3" saniye bekle
+//#Favorilere ekle butonuna tıkla
+//*xpath "//[@class='android.widget.FrameLayout>com.ozdilek.ozdilekteyim:id/relLayAddFav']" 'ye tıklandı
+*"3" saniye bekle
+# Favoriden sonra giriş işlemleri
+* "com.ozdilek.ozdilekteyim:id/etEposta" İd'li elemente "keskinderea@gmail.com" değerini yaz
+*"1" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/etPassword" İd'li elemente "Duhast61" değerini yaz
+*"3" saniye bekle
+#Giriş yap butonuna tıkla.
+*xpath "//*[@resource-id='com.ozdilek.ozdilekteyim:id/btnLogin']" 'e tıklandı
+*"3" saniye bekle
+#geri butonuna tıkla
+*id "com.ozdilek.ozdilekteyim:id/ivBack" li butona tıkla
+*"3" saniye bekle
+#ürün için beden seçimi yap.
+*xpath "//[@resource-id='com.ozdilek.ozdilekteyim:id/relLaySizeIn']" 'ye tıklandı
+#Favorilere ekle butonuna tıkla
+*xpath "//[@resource-id='com.ozdilek.ozdilekteyim:id/relLayAddCartBtn']" 'ye tıklandı
